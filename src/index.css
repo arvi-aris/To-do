@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.list-grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+.grid-item {
+	text-align: left;
+}
+.todo-input {
+    border: 1px solid #ccc;
+    padding: 20px;
+    padding-right: 0;
+    width: 85%;
+    border-radius: 5px;
+}
+.header {
+	font-weight: bold;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #000;
+}
+.todo-area {
+	margin: 50px 150px;
+}
+.add-block {
+	margin-top: 25px;
+}
+.grid-input {
+  	grid-column: 1 / span 2;
+  	grid-row: 1;
+}
+.grid-button {
+ 	grid-column: 3;
+ 	grid-row: 1;
+ 	text-align: right;
+}
+.grid-button button {
+	margin-top: 10px;
+    border: none;
+    background: 0;
+    padding: 9px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.section {
+	margin-bottom: 20px;
+}
+.list-item-name {
+	padding-top: 17px;
+}
+button:disabled{
+	cursor: not-allowed;
+}
+button:hover {
+	background-color: #ece5e6;
+}
+.completed-item {
+	text-decoration: line-through;
+}
